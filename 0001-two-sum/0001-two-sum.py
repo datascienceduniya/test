@@ -3,9 +3,8 @@ class Solution:
         dic={}
 
 
-        for index,values in enumerate(nums):
-            if target - values not in dic:
-                dic[values]=index
-
+        for index,value in enumerate(nums):
+            if target-value not in dic:
+                dic[value]=index
             else:
-                return [dic[target-values],index]
+                return (dic[target-value],index)
